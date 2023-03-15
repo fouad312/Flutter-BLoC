@@ -30,7 +30,7 @@ class AppRouter {
 
       case characterDetailsScreen:
         final character = settings.arguments as Character;
-        
+
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
             create: (BuildContext context) =>
@@ -41,5 +41,6 @@ class AppRouter {
           ),
         );
     }
+    return null;
   }
 }
